@@ -112,7 +112,6 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
             AudioServicesPlaySystemSound(customSoundId)
         }
         
-        
         // Stop capturing and hence stop executing metadataOutput function over and over again
         captureSession?.stopRunning()
         
