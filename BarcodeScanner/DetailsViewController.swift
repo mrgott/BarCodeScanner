@@ -10,8 +10,11 @@ import UIKit
 
 class DetailsViewController: UIViewController {
 
-    var scannedCode:String?
+     //MARK : Declare variable
     
+     var scannedCode:String?
+    
+   //MARK : Viewdidload method calling 
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -42,6 +45,7 @@ class DetailsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    //MARK : Other function calling 
     let codeLabel:UILabel = {
         let codeLabel = UILabel()
         codeLabel.textAlignment = .center
@@ -63,6 +67,7 @@ class DetailsViewController: UIViewController {
         return scanButton
     }()
     
+    //MARK : objc function calling
     @objc func displayScannerViewController() {
         print("123")
         let scanViewController = ScannerViewController()
